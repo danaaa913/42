@@ -1,0 +1,53 @@
+{
+  "chats": [
+    {
+      "chat_id": "chat-01",
+      "messages": [
+        {
+          "message_id": "chat-01-1",
+          "question": "كم يستغرق تجديد دفتر العائلة؟"
+        }
+      ]
+    },
+    {
+      "chat_id": "chat-02",
+      "messages": [
+        {
+          "message_id": "chat-02-1",
+          "question": "وين بقدر أطلع جواز سفر بدل فاقد؟"
+        }
+      ]
+    },
+    {
+      "chat_id": "chat-03",
+      "messages": [
+        {
+          "message_id": "chat-03-1",
+          "question": "شو الأوراق المطلوبة لتجديد دفتر العائلة؟"
+        },
+        {
+          "message_id": "chat-03-2",
+          "question": "وبقدر أقدّم الطلب من السفارة إذا كنت برا البلد؟"
+        }
+      ]
+    },
+    {
+      "chat_id": "chat-04",
+      "messages": [
+        {
+          "message_id": "chat-04-1",
+          "question": "قديش صورة شخصية بحتاج للبطاقة الذكية لأول مرة، وقديش لتجديد جواز السفر؟"
+        }
+      ]
+    },
+    {
+      "chat_id": "chat-05",
+      "messages": [
+        {
+          "message_id": "chat-05-1",
+          "question": "كم سعر تذكرة الطيران من عمان إلى دبي؟"
+        }
+      ]
+    }
+  ]
+}

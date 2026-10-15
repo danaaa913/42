@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="مساعد محلي يجيب من الوثائق الرسمية للخدمات الحكومية">
+  <title>مساعد الخدمات الحكومية</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">ن</span>
+        <div>
+          <h1>مساعد الخدمات الحكومية</h1>
+          <p>إجابات من الوثائق الرسمية المحلية</p>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <div class="status" id="status" title="حالة النظام">
+          <span id="statusDot"></span>
+          <span id="statusText">جاري الفحص…</span>
+        </div>
+        <button id="newConversation" class="ghost-button" type="button">محادثة جديدة</button>
+      </div>
+    </header>
+
+    <p class="notice-line">
+      يجيب هذا المساعد من الوثائق الرسمية المحلية فقط، ولا يتصل بالإنترنت.
+    </p>
+
+    <section id="chat" class="chat" aria-live="polite">
+      <div id="emptyState" class="empty-state">
+        <div class="empty-mark">؟</div>
+        <h2>اسأل عن أي خدمة حكومية</h2>
+        <p>مثال: كم يستغرق إصدار جواز سفر لأول مرة؟ أو: طيب والصور كم؟</p>
+      </div>
+    </section>
+
+    <div id="composerError" class="error hidden" role="alert"></div>
+
+    <form id="composer" class="composer" autocomplete="off">
+      <label class="sr-only" for="question">اكتب سؤالك</label>
+      <textarea id="question" rows="1" maxlength="4000"
+        placeholder="اكتب سؤالك هنا… (Enter للإرسال، Shift+Enter لسطر جديد)" required></textarea>
+      <button id="send" type="submit">
+        <span class="send-label">إرسال</span>
+        <span class="spinner hidden" aria-hidden="true"></span>
+      </button>
+    </form>
+
+    <footer class="foot">تعمل المعالجة محليًا عبر Ollama · المصادر المسترجعة بيانات غير موثوقة</footer>
+  </main>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>
