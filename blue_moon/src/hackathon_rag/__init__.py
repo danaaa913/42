@@ -1,6 +1,2 @@
-"""Local, document-grounded RAG toolkit prepared for the AI hackathon."""
+"""Government-service RAG toolkit for the competition submission."""
 
-from .config import HackathonConfig
-from .pipeline import HackathonRAG
-
-__all__ = ["HackathonConfig", "HackathonRAG"]
