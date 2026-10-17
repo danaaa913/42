@@ -1,4 +1,4 @@
-# NovaCortex Competition Submission
+# blue_moon Competition Submission
 
 ## Required Ollama models
 

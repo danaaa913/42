@@ -13,7 +13,7 @@ from hackathon_rag.api import validate_bind_security  # noqa: E402
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="NovaCortex local RAG web server")
+    parser = argparse.ArgumentParser(description="blue_moon local RAG web server")
     parser.add_argument("--host", default=os.getenv("HACKATHON_API_HOST", "127.0.0.1"))
     parser.add_argument("--port", type=int, default=int(os.getenv("HACKATHON_API_PORT", "8000")))
     parser.add_argument("--reload", action="store_true")

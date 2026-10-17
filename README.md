@@ -1,4 +1,4 @@
-# NovaCortex — مساعد الخدمات الحكومية الأردنية
+# blue_moon — مساعد الخدمات الحكومية الأردنية
 
 مساعد ذكي **محلي** (يعمل دون إنترنت) يجيب عن أسئلة الخدمات الحكومية الأردنية بالاعتماد على الوثائق الرسمية كمرجع وحيد، عبر نماذج [Ollama](https://ollama.com) المحلية. يخدم **12 خدمة** (جواز السفر، دفتر العائلة، البطاقة الذكية) بأربع حالات لكل خدمة (إصدار أول مرة، تجديد، بدل فاقد، بدل تالف)، ويُرجع لكل سؤال إجابةً نصية مع قائمة بمقاطع المصادر التي استند إليها.
 
@@ -185,7 +185,7 @@ blue_moon/
 <details>
 <summary><strong>English overview</strong></summary>
 
-NovaCortex is an offline Arabic assistant for Jordanian government services. It answers from official source documents only, using local Ollama models (`command-r7b-arabic:7b` for generation, `embeddinggemma` for embeddings). It covers 12 services (passport, family book, smart ID), handling four cases each (first issue, renewal, lost, damaged).
+blue_moon is an offline Arabic assistant for Jordanian government services. It answers from official source documents only, using local Ollama models (`command-r7b-arabic:7b` for generation, `embeddinggemma` for embeddings). It covers 12 services (passport, family book, smart ID), handling four cases each (first issue, renewal, lost, damaged).
 
 Key ideas: hybrid retrieval (Chroma vector search + BM25 fused with RRF), rule-based Jordanian-dialect routing, grounded JSON answers that cite the retrieved passages (`used_ids`), clarifying questions for personal fees, and automatic fee-coverage repair. The FastAPI web UI and the CLI share one engine.
 

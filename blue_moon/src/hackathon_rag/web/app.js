@@ -31,7 +31,7 @@ function escapeHtml(value) {
 }
 
 function authHeaders(json = false) {
-  const token = (sessionStorage.getItem("novacortex_token") || "").trim();
+  const token = (sessionStorage.getItem("blue_moon_token") || "").trim();
   return {
     ...(json ? { "Content-Type": "application/json" } : {}),
     ...(token ? { Authorization: `Bearer ${token}` } : {}),
